@@ -48,6 +48,7 @@ Options:
 - **:type** It can be only [:input, :textarea, :select, :checkbox, :date (>= 1.0.4)] or if undefined it defaults to :input.
 - **:collection**: In case you are using the :select type then you must specify the collection of values it takes. In case you are
   using the :checkbox type you can specify the two values it can take, or otherwise they will default to Yes and No.
+- **:collection_url**: Used for :select type.  This is an alternative to :collection that will allow lazy loading of collection.  Useful for big lists/forms.  See [Select] for details.
 - **:path**: URL to which the updating action will be sent. If not defined it defaults to the :object path.
 - **:nil**: The nil param defines the content displayed in case no value is defined for that field. It can be something like "click me to edit".
   If not defined it will show *"-"*.
