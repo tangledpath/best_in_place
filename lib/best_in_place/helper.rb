@@ -26,6 +26,7 @@ module BestInPlace
           display_value = Hash[opts[:collection]].stringify_keys[value.to_s]
           collection = opts[:collection].to_json
         else
+          value = real_object.send(field)
           collection = [].to_json
         end
       end
